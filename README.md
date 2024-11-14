@@ -37,7 +37,7 @@ To get this project up and running on your local machine, follow these steps:
    npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:3000` to view the website.
+5. Open your browser and visit `http://localhost:port` (as instructed in the terminal) to view the website.
 
 ## Available Scripts
 
@@ -77,7 +77,7 @@ my-portfolio/
 
 ## Deployment
 
-This project is deployed using Vercel. You can view the live website at [https://mombewa.github.io/my-portfolio/](https://mombewa.github.io/my-portfolio/).
+This project is deployed using Vercel. You can view the live website at [https://mombewaportfolio.vercel.app/](https://mombewaportfolio.vercel.app/).
 
 ## License
 

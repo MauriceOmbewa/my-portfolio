@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import ProjectCard from './components/ProjectCard';
 import SkillBadge from './components/SkillBadge';
 import Section from './components/Section';
+import CVSection from './components/CVSection';
 
 function App() {
   const projects = [
@@ -147,6 +148,9 @@ function App() {
           </div>
         </div>
       </Section>
+
+      {/* CV Section */}
+      <CVSection />
 
       {/* Contact Section */}
       <Section id="contact" icon={<Mail />} title="Get in Touch">

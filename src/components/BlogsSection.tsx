@@ -18,7 +18,7 @@ const BlogsSection: React.FC = () => {
       title: "Using Odoo as a Backend: Module Setup, API Access, and cURL Commands",
       description: "Explore how to leverage Odoo as a powerful backend solution for your applications. This guide covers module setup, API configuration, authentication, and practical cURL command examples for seamless integration with Odoo's REST API.",
       url: "https://dev.to/maurice_ombewa_21d073ef7a/using-odoo-as-a-backend-module-setup-api-access-and-curl-commands-1dia",
-      publishedDate: "Dec 2024",
+      publishedDate: "June 2025",
       readTime: "12 min read",
       tags: ["Odoo", "Backend", "API", "Python", "ERP"],
       image: "https://imgs.search.brave.com/uyBcnTTsL25eiNJ_ettU92I_-mkunX5Bvj17nRQZizM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZGxj/Y29ycC13ZWItcHJv/ZC5ibHIxLmRpZ2l0/YWxvY2VhbnNwYWNl/cy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMTAvMTEx/NTI4NDgvVW50aXRs/ZWQtZGVzaWduLTE5/LTEucG5n"

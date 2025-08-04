@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { Code2, Play } from 'lucide-react';
 
 interface ProjectCardProps {
   title: string;
@@ -7,9 +7,10 @@ interface ProjectCardProps {
   image: string;
   tags: string[];
   link: string;
+  liveDemo?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, tags, link }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, tags, link, liveDemo }) => {
   return (
     <div className="bg-gray-800 rounded-xl overflow-hidden group hover:transform hover:scale-[1.02] transition-all duration-300">
       <div className="relative h-48 overflow-hidden">
@@ -33,14 +34,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, ta
             </span>
           ))}
         </div>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
-        >
-          View Project <ExternalLink className="w-4 h-4 ml-2" />
-        </a>
+        <div className="flex gap-3">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-gray-400 hover:text-white transition-colors"
+          >
+            <Code2 className="w-4 h-4 mr-2" />
+            Code
+          </a>
+          {liveDemo && (
+            <a
+              href={liveDemo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors font-medium"
+            >
+              <Play className="w-4 h-4 mr-2" />
+              Live Demo
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

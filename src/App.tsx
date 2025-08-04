@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Code2, Briefcase, User, GraduationCap, Terminal, Phone, MapPin, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, Code2, Briefcase, User, GraduationCap, Terminal, Phone, MapPin, ExternalLink, X } from 'lucide-react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ProjectCard from './components/ProjectCard';
@@ -304,6 +304,14 @@ function App() {
                     className="p-3 bg-gray-700/50 hover:bg-gray-600/70 rounded-lg transition-colors group"
                   >
                     <Linkedin className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                  </a>
+                  <a
+                    href="https://x.com/maurice_ombewa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-gray-700/50 hover:bg-gray-600/70 rounded-lg transition-colors group"
+                  >
+                    <X className="w-5 h-5 text-gray-400 group-hover:text-white" />
                   </a>
                   <a
                     href="https://dev.to/maurice_ombewa_21d073ef7a"

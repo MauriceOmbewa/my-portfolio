@@ -75,11 +75,20 @@ function App() {
       <Section id="about" icon={<User />} title="About Me">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
-            <p className="text-gray-300 leading-relaxed text-lg">
-              My journey in software development began in 2020 when I enrolled for a Bachelor of Science in Information Technology at KCA University. During my 4-year course, I developed a strong foundation in various programming languages and software development principles.
+            {/* <p className="text-gray-300 leading-relaxed text-lg">
+              Maurice Ombewa is a seasoned Full-Stack Developer with two years of hands-on experience designing, building, and customizing scalable systems for diverse organizational needs. He specializes in developing solutions ranging from Enterprise Resource Planning (ERP) systems to Information Management Systems (IMS), leveraging technologies such as Go, C, JavaScript, SQL, and Ruby on Rails. Maurice holds a Bachelor’s degree in Information Technology, which has equipped him with a strong foundation in software development, database management, and systems design.
             </p>
             <p className="text-gray-300 leading-relaxed text-lg">
-              Currently, I'm a Full-Stack Developer at Zone01 Kisumu (from January 2024), where I build scalable and maintainable web applications from front to back. I specialize in React.js, JavaScript, and responsive UI development, with backend expertise in Python/Django, Node.js, and database management. I'm passionate about creating efficient, user-focused solutions and mentoring peers through community leadership.
+              He has delivered impactful projects, including Shamba Share, a blockchain-powered land leasing platform that securely records transactions to prevent double leasing, and a fully customized ERP solution built on Odoo for a private client. These solutions demonstrate his ability to combine technical expertise with innovative problem-solving, ensuring systems are efficient, reliable, and tailored to client needs.
+            </p>
+            <p className="text-gray-300 leading-relaxed text-lg">
+              Currently, Maurice serves as a Full-Stack Developer at Zone01 Kisumu, where he develops systems from the ground up and enhances existing solutions to meet unique client requirements. Collaborative by nature, he often works with peers to create high-performance applications, demonstrating expertise in backend architecture, frontend development, database management, and system optimization. He thrives in agile environments, adapting quickly to changing requirements and ensuring continuous delivery of high-quality software solutions.
+            </p> */}
+            <p className="text-gray-300 leading-relaxed text-lg">
+              Maurice Ombewa is a seasoned Full-Stack Developer with two years of hands-on experience designing, building, and customizing scalable systems for diverse organizational needs. He specializes in developing solutions ranging from Enterprise Resource Planning (ERP) systems to Information Management Systems (IMS), leveraging technologies such as Go, C, python, django, react, JavaScript, SQL, and Ruby on Rails. Maurice holds a Bachelor’s degree in Information Technology, which has equipped him with a strong foundation in software development, database management, and systems design. He has delivered impactful projects, including Shamba Share, a blockchain-powered land leasing platform that securely records transactions to prevent double leasing, and a fully customized ERP solution built on Odoo for a private client.
+            </p>
+            <p className="text-gray-300 leading-relaxed text-lg">
+              Currently, he serves as a Full-Stack Developer at Zone01 Kisumu, where he develops systems from the ground up and enhances existing solutions to meet unique client requirements. Collaborative by nature, Maurice often works with peers to create innovative, high-performance applications, demonstrating expertise in backend architecture, frontend development, database management, and system optimization. He thrives in agile environments, adapting quickly to changing requirements and ensuring continuous delivery of high-quality software solutions.
             </p>
             <div className="pt-4">
               <a

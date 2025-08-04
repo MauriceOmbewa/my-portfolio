@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Code2, Briefcase, User, GraduationCap, Terminal } from 'lucide-react';
+import { Github, Linkedin, Mail, Code2, Briefcase, User, GraduationCap, Terminal, Phone, MapPin, ExternalLink } from 'lucide-react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ProjectCard from './components/ProjectCard';
@@ -240,8 +240,87 @@ function App() {
 
       {/* Contact Section */}
       <Section id="contact" icon={<Mail />} title="Get in Touch">
-        <div className="max-w-xl mx-auto">
-          <form className="space-y-4 bg-gray-800/50 p-8 rounded-xl backdrop-blur-sm">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Contact Information */}
+          <div className="space-y-6">
+            <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700/50">
+              <h3 className="text-xl font-semibold text-white mb-6">Contact Information</h3>
+
+              <div className="space-y-4">
+                {/* Phone */}
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-blue-500/10 rounded-lg">
+                    <Phone className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="text-gray-400 text-sm">Phone</p>
+                    <a href="tel:+254714981014" className="text-white hover:text-blue-400 transition-colors">
+                      +254 714 981 014
+                    </a>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-blue-500/10 rounded-lg">
+                    <Mail className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="text-gray-400 text-sm">Email</p>
+                    <a href="mailto:ombewamaurice79@gmail.com" className="text-white hover:text-blue-400 transition-colors">
+                      ombewamaurice79@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                {/* Location */}
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-blue-500/10 rounded-lg">
+                    <MapPin className="w-5 h-5 text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="text-gray-400 text-sm">Location</p>
+                    <p className="text-white">Nairobi, Kenya</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Social Links */}
+              <div className="mt-8">
+                <h4 className="text-lg font-medium text-white mb-4">Connect with me</h4>
+                <div className="flex gap-4">
+                  <a
+                    href="https://github.com/MauriceOmbewa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-gray-700/50 hover:bg-gray-600/70 rounded-lg transition-colors group"
+                  >
+                    <Github className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/maurice-ombewa-3631ab223/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-gray-700/50 hover:bg-gray-600/70 rounded-lg transition-colors group"
+                  >
+                    <Linkedin className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                  </a>
+                  <a
+                    href="https://dev.to/maurice_ombewa_21d073ef7a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-gray-700/50 hover:bg-gray-600/70 rounded-lg transition-colors group"
+                  >
+                    <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div>
+            <form className="space-y-4 bg-gray-800/50 p-8 rounded-xl backdrop-blur-sm border border-gray-700/50">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
                 Name
@@ -279,6 +358,7 @@ function App() {
               Send Message
             </button>
           </form>
+          </div>
         </div>
       </Section>
 

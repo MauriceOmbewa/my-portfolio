@@ -53,7 +53,7 @@ function App() {
                 Maurice Ombewa
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8">
-                Software Developer | Go Enthusiast | Problem Solver
+                Full-Stack Developer | React.js & Python Expert | Problem Solver
               </p>
               <div className="flex justify-center md:justify-start gap-6">
                 <a href="https://github.com/MauriceOmbewa" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
@@ -79,7 +79,7 @@ function App() {
               My journey in software development began in 2020 when I enrolled for a Bachelor of Science in Information Technology at KCA University. During my 4-year course, I developed a strong foundation in various programming languages and software development principles.
             </p>
             <p className="text-gray-300 leading-relaxed text-lg">
-              Currently, I'm an apprentice Software Developer at Zone01 Kisumu (from April 2024), where I'm actively enhancing my coding skills and working on real-world projects. I'm particularly passionate about Go programming and building efficient, scalable solutions.
+              Currently, I'm a Full-Stack Developer at Zone01 Kisumu (from January 2024), where I build scalable and maintainable web applications from front to back. I specialize in React.js, JavaScript, and responsive UI development, with backend expertise in Python/Django, Node.js, and database management. I'm passionate about creating efficient, user-focused solutions and mentoring peers through community leadership.
             </p>
             <div className="pt-4">
               <a
@@ -90,12 +90,19 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <SkillBadge title="Go" level={85} />
-            <SkillBadge title="JavaScript" level={80} />
-            <SkillBadge title="Python" level={75} />
-            <SkillBadge title="SQL" level={80} />
-            <SkillBadge title="Java" level={70} />
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <SkillBadge title="React.js" level={90} />
+            <SkillBadge title="JavaScript" level={85} />
+            <SkillBadge title="Python/Django" level={80} />
+            <SkillBadge title="Node.js" level={75} />
+            <SkillBadge title="PostgreSQL" level={80} />
+            <SkillBadge title="HTML/CSS" level={90} />
+            <SkillBadge title="Git/GitHub" level={85} />
+            <SkillBadge title="Docker" level={70} />
+            <SkillBadge title="AWS/Azure" level={65} />
+            <SkillBadge title="MongoDB" level={75} />
+            <SkillBadge title="Go" level={80} />
+            <SkillBadge title="RESTful APIs" level={85} />
           </div>
         </div>
       </Section>
@@ -138,10 +145,10 @@ function App() {
                 <Terminal className="w-6 h-6 text-blue-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold">Apprentice Software Developer</h3>
-                <p className="text-blue-400 mb-2">Zone01 Kisumu • April 2024 - Present</p>
+                <h3 className="text-xl font-semibold">Full-Stack Developer</h3>
+                <p className="text-blue-400 mb-2">Zone01 Kisumu • January 2024 - Present</p>
                 <p className="text-gray-300">
-                  Currently enhancing my software development skills through hands-on experience with modern technologies and best practices. Focusing on Go programming and full-stack development.
+                  Building responsive user interfaces using React.js, JavaScript, HTML and CSS, improving overall usability and design consistency. Integrating RESTful APIs into React components, enhancing data flow and UI responsiveness. Collaborating with peers in an Agile environment, delivering features iteratively and maintaining clear technical documentation.
                 </p>
               </div>
             </div>

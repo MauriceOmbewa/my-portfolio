@@ -69,9 +69,8 @@ const CVSection: React.FC = () => {
               <div className="space-y-2">
                 <h4 className="font-medium text-white">Highlights include:</h4>
                 <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Software development experience with Go, JavaScript, and modern web technologies</li>
+                  <li>Software development experience with Go, Python, JavaScript, and modern web technologies</li>
                   <li>Educational background in Information Technology</li>
-                  <li>Project portfolio showcasing practical applications</li>
                   <li>Technical certifications and continuous learning initiatives</li>
                 </ul>
               </div>

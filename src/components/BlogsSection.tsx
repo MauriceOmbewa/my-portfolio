@@ -11,7 +11,8 @@ const BlogsSection: React.FC = () => {
       url: "https://dev.to/maurice_ombewa_21d073ef7a/how-to-use-localstorage-sessionstorage-and-cookies-in-javascript-67m",
       publishedDate: "Dec 2024",
       readTime: "8 min read",
-      tags: ["JavaScript", "Web Development", "Storage", "Frontend"]
+      tags: ["JavaScript", "Web Development", "Storage", "Frontend"],
+      image: "https://imgs.search.brave.com/ZzSMFH2WEZahA9j9EfPelOYYN5fTHkltyI3vbRnd0kA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2FuaXR5LmlvL2lt/YWdlcy8zand5emVi/ay9wcm9kdWN0aW9u/LzgyMWVlN2NjZDRh/YWZkNDM2ZTcwZTBj/ZTcyNzUzOTU0M2Vh/MWIzMjgtNjMzNngz/OTUyLnBuZz9hdXRv/PWZvcm1hdCZmaXQ9/bWF4Jnc9Mzg0MCZx/PTc1"
     },
     {
       title: "Using Odoo as a Backend: Module Setup, API Access, and cURL Commands",
@@ -19,7 +20,8 @@ const BlogsSection: React.FC = () => {
       url: "https://dev.to/maurice_ombewa_21d073ef7a/using-odoo-as-a-backend-module-setup-api-access-and-curl-commands-1dia",
       publishedDate: "Dec 2024",
       readTime: "12 min read",
-      tags: ["Odoo", "Backend", "API", "Python", "ERP"]
+      tags: ["Odoo", "Backend", "API", "Python", "ERP"],
+      image: "https://imgs.search.brave.com/uyBcnTTsL25eiNJ_ettU92I_-mkunX5Bvj17nRQZizM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZGxj/Y29ycC13ZWItcHJv/ZC5ibHIxLmRpZ2l0/YWxvY2VhbnNwYWNl/cy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMTAvMTEx/NTI4NDgvVW50aXRs/ZWQtZGVzaWduLTE5/LTEucG5n"
     }
   ];
 

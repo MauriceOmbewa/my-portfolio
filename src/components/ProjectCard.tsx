@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, ta
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-gray-400 hover:text-white transition-colors"
+            className="inline-flex items-center bg-gray-700/50 hover:bg-gray-600/70 text-gray-300 hover:text-white px-4 py-2 rounded-lg transition-all duration-300 border border-gray-600/50 hover:border-gray-500/70"
           >
             <Code2 className="w-4 h-4 mr-2" />
             Code

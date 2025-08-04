@@ -75,7 +75,8 @@ function App() {
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden ring-4 ring-blue-500/30 shadow-2xl">
               <img
-                src="https://learn.zone01kisumu.ke/git/avatars/495e06ea69c29cee1df656696956ba25?size=870"
+                // src="https://learn.zone01kisumu.ke/git/avatars/495e06ea69c29cee1df656696956ba25?size=870"
+                src = "https://avatars.githubusercontent.com/u/124437425?v=4"
                 alt="Maurice Ombewa"
                 className="w-full h-full object-cover"
               />

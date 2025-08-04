@@ -6,15 +6,46 @@ import ProjectCard from './components/ProjectCard';
 import SkillBadge from './components/SkillBadge';
 import Section from './components/Section';
 import CVSection from './components/CVSection';
+import BlogsSection from './components/BlogsSection';
 
 function App() {
   const projects = [
     {
-      title: "Personal Portfolio",
-      description: "A modern, responsive portfolio website built with React and Tailwind CSS.",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80",
+      title: "Zuru TV",
+      description: "ZuruTV is a movie recommendation platform that allows users to discover films tailored to their interests, view detailed information about each title, and stream content directly from the platform.",
+      image: "https://www.apptuts.net/wp-content/uploads/2020/09/cover-movie-download-apps.jpg",
       tags: ["React", "TypeScript", "Tailwind CSS"],
-      link: "https://github.com/MauriceOmbewa/my-portfolio"
+      link: "https://github.com/MauriceOmbewa/ZuruTv",
+      liveDemo: "https://zuru-tv.vercel.app"
+    },
+    {
+      title: "Soundra",
+      description: "Soundra is a music discovery and streaming platform that helps users explore new tracks, view detailed artist and album information, and enjoy seamless music playback.",
+      image: "https://devabit.com/uploads/music-app-features-cover-small-devabit.webp",
+      tags: ["React", "TypeScript", "Tailwind CSS"],
+      link: "https://github.com/MauriceOmbewa/Soundra",
+      liveDemo: "https://soundra.vercel.app"
+    },
+    {
+      title: "System Monitor",
+      description: "A C++ desktop system monitor with a Dear ImGui interface that visualizes real-time CPU, memory, disk, fan, thermal, and network usage by reading data from the Linux /proc and /sys filesystems.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpglKbRHeEmgGEhbpc8sEcy-Cyy3dggH2jGA&s",
+      tags: ["C++", "Makefile"],
+      link: "https://github.com/MauriceOmbewa/system-monitor"
+    },
+    {
+      title: "Netfix",
+      description: "Netfix is a web platform that connects clients with service providers across various industries such as plumbing, carpentry, and more. Companies can register and list the services they offer, making it easy for clients to find, browse, and book the services they need. The platform streamlines the process of discovering and hiring trusted professionals for a wide range of tasks.",
+      image: "https://imgs.search.brave.com/-dKatE4zsJTdTtVcy0SRz62Xr21J_fizWt8tBW1uNwY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvODk1Ni84OTU2/MTI0LnBuZw",
+      tags: ["Python", "Django", "Javascript", "HTML", "CSS"],
+      link: "https://github.com/MauriceOmbewa/netfix"
+    },
+    {
+      title: "Ripple",
+      description: "Ripple is a social media platform that supports creating and sharing posts, following friends, forming and joining groups, organizing and attending events, real-time chatting, and toggling account visibility between public and private.",
+      image: "https://st5.depositphotos.com/3930295/62029/i/450/depositphotos_620295162-stock-photo-social-media-social-media-background.jpg",
+      tags: ["Go", "Javascript", "Docker", "HTML", "CSS"],
+      link: "https://github.com/MauriceOmbewa/ripple"
     },
     {
       title: "Groupie Trackers",
@@ -23,13 +54,13 @@ function App() {
       tags: ["Go", "Javascript", "HTML", "CSS"],
       link: "https://github.com/MauriceOmbewa/visualizations-groupie-trackers"
     },
-    {
-      title: "WGET",
-      description: "This project is a Go-based command-line tool replicating wget functions, supporting file downloads, custom naming, directory storage, download speed limits, background tasks, and website mirroring with offline-ready links.",
-      image: "https://shapeshed.com/unix-wget/images/hero_hu9721cd899e5ce367f375e3e80fabbabf_80679_1600x0_resize_q80_h2_lanczos_3.webp",
-      tags: ["Go"],
-      link: "https://github.com/MauriceOmbewa/wget"
-    }
+    // {
+    //   title: "Ripple",
+    //   description: "Ripple is a social media platform that supports creating and sharing posts, following friends, forming and joining groups, organizing and attending events, real-time chatting, and toggling account visibility between public and private.",
+    //   image: "https://st5.depositphotos.com/3930295/62029/i/450/depositphotos_620295162-stock-photo-social-media-social-media-background.jpg",
+    //   tags: ["Go", "Javascript", "Docker", "HTML", "CSS"],
+    //   link: "https://github.com/MauriceOmbewa/ripple"
+    // }
   ];
 
   return (
@@ -53,7 +84,7 @@ function App() {
                 Maurice Ombewa
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8">
-                Full-Stack Developer | React.js & Python Expert | Problem Solver
+                Full-Stack Developer | Software Developer | Problem Solver
               </p>
               <div className="flex justify-center md:justify-start gap-6">
                 <a href="https://github.com/MauriceOmbewa" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
@@ -143,6 +174,23 @@ function App() {
             </div>
           </div>
         </div>
+        <div><br /></div>
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm">
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-blue-500/10 rounded-lg">
+                <GraduationCap className="w-6 h-6 text-blue-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Software Development</h3>
+                <p className="text-blue-400 mb-2">Power Learn Project(PLP) • April 2022 - December 2022</p>
+                <p className="text-gray-300">
+                Completed an intensive software development program covering programming fundamentals, web and mobile app development, databases, and software engineering best practices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </Section>
 
       {/* Experience Section */}
@@ -163,7 +211,29 @@ function App() {
             </div>
           </div>
         </div>
+        <div>
+          <br />
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm">
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-blue-500/10 rounded-lg">
+                <Terminal className="w-6 h-6 text-blue-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Full-Stack Developer</h3>
+                <p className="text-blue-400 mb-2">Vuna • May 2025 - July 2025</p>
+                <p className="text-gray-300">
+                  Developing and customizing ERP systems to meet client-specific needs, with a focus on Odoo and Fleetbase platforms. Configuring modules, workflows, and integrations to optimize business processes and operational efficiency. Collaborating with clients to gather requirements, implement tailored solutions, and provide ongoing technical support, ensuring seamless adoption and functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </Section>
+
+      {/* Blogs Section */}
+      <BlogsSection />
 
       {/* CV Section */}
       <CVSection />

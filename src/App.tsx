@@ -35,6 +35,14 @@ function App() {
       link: "https://github.com/MauriceOmbewa/system-monitor"
     },
     {
+      title: "TibaTrust",
+      description: "TibaTrust is a blockchain-powered healthcare platform providing affordable insurance, medical aid, and community support for underserved patients in Kenya. Built with React, TypeScript, and Firebase, featuring M-Pesa payment integration for seamless donations and insurance contributions.",
+      image: "https://imgs.search.brave.com/XePZtg4kiOu0TAAS6BnQmbX5AHxMY5Kqo5EIwI3nTq4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9oZWFsdGgtaW5z/dXJhbmNlLWNsaXBi/b2FyZC1zdGV0aG9z/Y29wZS1oZWFydF8z/NjMyNS0yNzY2Lmpw/Zz9zZW10PWFpc19o/eWJyaWQmdz03NDAm/cT04MA",
+      tags: ["TypeScript", "Javascript", "UI/UX", "HTML", "CSS"],
+      link: "https://github.com/MauriceOmbewa/TibaTrust",
+      liveDemo: "https://tibatrust.vercel.app"
+    },
+    {
       title: "Netfix",
       description: "Netfix is a web platform that connects clients with service providers across various industries such as plumbing, carpentry, and more. Companies can register and list the services they offer, making it easy for clients to find, browse, and book the services they need. The platform streamlines the process of discovering and hiring trusted professionals for a wide range of tasks.",
       image: "https://imgs.search.brave.com/-dKatE4zsJTdTtVcy0SRz62Xr21J_fizWt8tBW1uNwY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS8x/MjgvODk1Ni84OTU2/MTI0LnBuZw",
@@ -135,6 +143,8 @@ function App() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <SkillBadge title="React.js" level={90} />
             <SkillBadge title="JavaScript" level={85} />
+            <SkillBadge title="TypeScript" level={85} />
+            <SkillBadge title="UI/UX" level={85} />
             <SkillBadge title="Python/Django" level={80} />
             <SkillBadge title="Node.js" level={75} />
             <SkillBadge title="PostgreSQL" level={80} />
@@ -143,8 +153,9 @@ function App() {
             <SkillBadge title="Docker" level={70} />
             <SkillBadge title="AWS/Azure" level={65} />
             <SkillBadge title="MongoDB" level={75} />
-            <SkillBadge title="Go" level={80} />
+            <SkillBadge title="Go" level={85} />
             <SkillBadge title="RESTful APIs" level={85} />
+            <SkillBadge title="GraphQL" level={70} />
           </div>
         </div>
       </Section>

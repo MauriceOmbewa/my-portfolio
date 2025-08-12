@@ -22,6 +22,15 @@ const BlogsSection: React.FC = () => {
       readTime: "12 min read",
       tags: ["Odoo", "Backend", "API", "Python", "ERP"],
       image: "https://imgs.search.brave.com/uyBcnTTsL25eiNJ_ettU92I_-mkunX5Bvj17nRQZizM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZGxj/Y29ycC13ZWItcHJv/ZC5ibHIxLmRpZ2l0/YWxvY2VhbnNwYWNl/cy5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMTAvMTEx/NTI4NDgvVW50aXRs/ZWQtZGVzaWduLTE5/LTEucG5n"
+    }, 
+    {
+      title: "How to Create a Simple Chatbot with Python and the NLTK Library",
+      description: "A modern full-stack web app using Google Gemini API for intelligent Q&A on international travel documentation. Features a sleek real-time chat, markdown rendering, and structured prompts for accurate passport, visa, and document guidance. Built with FastAPI and Next.js, with async processing, robust error handling, and cross-platform support.",
+      url: "https://dev.to/maurice_ombewa_21d073ef7a/understanding-websockets-a-beginner-friendly-guide-3488",
+      publishedDate: "Aug 2025",
+      readTime: "10 min read",
+      tags: ["JS", "web development"],
+      image: "https://imgs.search.brave.com/OiAV5K7e8XudG8JqIijp8ODyBvEFK4IZ1sM9kEelDX0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEzLzIzLzg1LzIx/LzM2MF9GXzEzMjM4/NTIxNzdfRXZVWW1I/NlBKbWZPZ3JMd1ky/MHB6enVBeUo1WHhn/cEguanBn"
     }
   ];
 

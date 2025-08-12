@@ -63,6 +63,13 @@ function App() {
       tags: ["Go", "Javascript", "HTML", "CSS"],
       link: "https://github.com/MauriceOmbewa/visualizations-groupie-trackers"
     },
+    {
+      title: "interactive-qa-llm-app",
+      description: "A modern full-stack web app using Google Gemini API for intelligent Q&A on international travel documentation. Features a sleek real-time chat, markdown rendering, and structured prompts for accurate passport, visa, and document guidance. Built with FastAPI and Next.js, with async processing, robust error handling, and cross-platform support.",
+      image: "https://imgs.search.brave.com/31PYqNtwL8zu6COpLxYqBe95g38_lDuhK0afaXj0BQU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQ0/NDY3NTkxNS9waG90/by9xLWFuZC1hLWFu/LWFiYnJldmlhdGlv/bi1vbi1zbWFydC1i/YWNrZ3JvdW5kLWNo/YXRib3QtdGVjaG5v/bG9neS1jb25jZXB0/LWFydGlmaWNpYWwu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PU1vODNKS29uLUda/Wk10T0E1VUtSd2hy/cENyWV9uY19mY1F6/d01VaFFtcW89",
+      tags: ["Next.js", "React", "Python", "Javascript", "HTML", "CSS"],
+      link: "https://github.com/MauriceOmbewa/interactive-qa-llm-app"
+    },
     // {
     //   title: "Ripple",
     //   description: "Ripple is a social media platform that supports creating and sharing posts, following friends, forming and joining groups, organizing and attending events, real-time chatting, and toggling account visibility between public and private.",
@@ -142,6 +149,7 @@ function App() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <SkillBadge title="React.js" level={90} />
+            <SkillBadge title="Next.js" level={80} />
             <SkillBadge title="JavaScript" level={85} />
             <SkillBadge title="TypeScript" level={85} />
             <SkillBadge title="UI/UX" level={85} />

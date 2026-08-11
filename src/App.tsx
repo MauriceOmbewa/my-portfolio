@@ -12,6 +12,14 @@ import ContactForm from './components/ContactForm';
 function App() {
   const projects = [
     {
+      title: "Garisha",
+      description: "Garisha is a business management platform that helps garages, car yards, car hire businesses, and dealerships manage their operations, customers, vehicles, finances, and performance analytics in one centralized platform.",
+      image: "https://hinawierp.com/wp-content/uploads/2026/05/Garage-300x200-2.png.webp",
+      tags: ["React", "TypeScript", "Tailwind CSS"],
+      link: "https://github.com/MauriceOmbewa/garisha-frontend.git",
+      liveDemo: "https://garisha-frontend.vercel.app"
+    },
+    {
       title: "Zuru TV",
       description: "ZuruTV is a movie recommendation platform that allows users to discover films tailored to their interests, view detailed information about each title, and stream content directly from the platform.",
       image: "https://www.apptuts.net/wp-content/uploads/2020/09/cover-movie-download-apps.jpg",
@@ -149,6 +157,7 @@ function App() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <SkillBadge title="React.js" level={90} />
+            <SkillBadge title="Angular" level={95} />
             <SkillBadge title="Next.js" level={80} />
             <SkillBadge title="JavaScript" level={85} />
             <SkillBadge title="TypeScript" level={85} />

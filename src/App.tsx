@@ -12,12 +12,36 @@ import ContactForm from './components/ContactForm';
 function App() {
   const projects = [
     {
+      title: "Sellora",
+      description: "Sellora is a SaaS platform built for small and medium-sized businesses to run and grow their operations from one place. Built with a React frontend and a Python backend on PostgreSQL.",
+      image: "https://serp-p.pids.gov.ph/media/featured-image/1685338051_647437c361ed2.jpeg", 
+      tags: ["React", "Python", "PostgreSQL", "SaaS"],
+      link: "https://github.com/MauriceOmbewa/sellora.git",
+      liveDemo: "https://sellora-one-smoky.vercel.app"
+    },
+    {
       title: "Garisha",
       description: "Garisha is a business management platform that helps garages, car yards, car hire businesses, and dealerships manage their operations, customers, vehicles, finances, and performance analytics in one centralized platform.",
       image: "https://hinawierp.com/wp-content/uploads/2026/05/Garage-300x200-2.png.webp",
       tags: ["React", "TypeScript", "Tailwind CSS"],
       link: "https://github.com/MauriceOmbewa/garisha-frontend.git",
       liveDemo: "https://garisha-frontend.vercel.app"
+    },
+   // {
+      //title: "Kanisa Manager",
+     //description: "Kanisa Manager is a church management platform covering member registration, M-Pesa payments for giving, and finance and attendance analytics dashboards. Built with Angular and TypeScript.",
+     // image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYtRxcvmJG1B55hmPHCKurUBlycSXYZjqeo_BaEY07TrOPsm64yNqXOxg&s=10", 
+     // tags: ["Angular", "TypeScript", "M-Pesa", "Analytics"],
+      //link: "https://github.com/MauriceOmbewa/REPO-NAME", // TODO
+      //liveDemo: "https://YOUR-DEMO-URL" // TODO
+   // },
+    {
+      title: "WaziLearn",
+      description: "WaziLearn is a learning management system localized for the Kenyan curriculum, giving learners and educators one platform to access and manage curriculum-aligned learning content. Built with an Angular frontend and a Java Spring Boot backend.",
+      image: "https://learnademy.com/storage/uploads/users/1_seaq73mzj4m18ejwwqm2.jpg", 
+      tags: ["Angular", "TypeScript", "Java", "Spring Boot"],
+      link: "https://github.com/MauriceOmbewa/wazi.git", 
+      liveDemo: "https://wazi-ten.vercel.app"
     },
     {
       title: "Zuru TV",
@@ -141,10 +165,10 @@ function App() {
               Currently, Maurice serves as a Full-Stack Developer at Zone01 Kisumu, where he develops systems from the ground up and enhances existing solutions to meet unique client requirements. Collaborative by nature, he often works with peers to create high-performance applications, demonstrating expertise in backend architecture, frontend development, database management, and system optimization. He thrives in agile environments, adapting quickly to changing requirements and ensuring continuous delivery of high-quality software solutions.
             </p> */}
             <p className="text-gray-300 leading-relaxed text-lg">
-              Maurice Ombewa is a seasoned Full-Stack Developer with two years of hands-on experience designing, building, and customizing scalable systems for diverse organizational needs. He specializes in developing solutions ranging from Enterprise Resource Planning (ERP) systems to Information Management Systems (IMS), leveraging technologies such as Go, C, python, django, react, JavaScript, SQL, and Ruby on Rails. Maurice holds a Bachelor’s degree in Information Technology, which has equipped him with a strong foundation in software development, database management, and systems design. He has delivered impactful projects, including Shamba Share, a blockchain-powered land leasing platform that securely records transactions to prevent double leasing, and a fully customized ERP solution built on Odoo for a private client.
+              Maurice Ombewa is a Software Engineer with over two years of hands-on experience building and maintaining full-stack web applications and REST APIs. He works across Python (FastAPI), JavaScript/TypeScript (React, Angular), Java (Spring Boot) and Go, with PostgreSQL, MySQL and Redis for data, and uses Git, Docker and CI/CD pipelines in agile team workflows. Maurice holds a Bachelor of Science in Information Technology from KCA University, which gave him a strong foundation in software development, database management and systems design. Beyond his jobs, he has built several products end to end, including WaziLearn, a learning platform for the Kenyan curriculum; Sellora, a SaaS platform for small and medium-sized businesses; Garisha, a multi-branch business management platform; and Kanisa Manager, a church management system with M-Pesa payments.
             </p>
             <p className="text-gray-300 leading-relaxed text-lg">
-              Currently, he serves as a Full-Stack Developer at Zone01 Kisumu, where he develops systems from the ground up and enhances existing solutions to meet unique client requirements. Collaborative by nature, Maurice often works with peers to create innovative, high-performance applications, demonstrating expertise in backend architecture, frontend development, database management, and system optimization. He thrives in agile environments, adapting quickly to changing requirements and ensuring continuous delivery of high-quality software solutions.
+              Currently, he is a Software Engineer at Softkit Limited, where he builds full-stack features with React, Angular and FastAPI, develops reusable UI components, and improves backend performance with Redis caching and background workers. Previously at Zone01 Kisumu, he developed secure REST APIs, optimized database queries, containerized applications with Docker and integrated AI-powered features into existing products. Collaborative by nature, Maurice values code reviews and feedback, and he learns new stacks quickly, adapting to changing requirements while delivering reliable, high-quality software.
             </p>
             <div className="pt-4">
               <a

@@ -256,10 +256,29 @@ function App() {
                 <Terminal className="w-6 h-6 text-blue-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold">Full-Stack Developer</h3>
-                <p className="text-blue-400 mb-2">Zone01 Kisumu • January 2024 - Present</p>
+                <h3 className="text-xl font-semibold">Software Engineer</h3>
+                <p className="text-blue-400 mb-2">Softkit Limited • September 2025 - Present</p>
                 <p className="text-gray-300">
-                  Building responsive user interfaces using React.js, JavaScript, HTML and CSS, improving overall usability and design consistency. Integrating RESTful APIs into React components, enhancing data flow and UI responsiveness. Collaborating with peers in an Agile environment, delivering features iteratively and maintaining clear technical documentation.
+                  Building full-stack features across the frontend (React, Angular, TypeScript) and backend (Python, FastAPI) of production web applications. Developing reusable UI components and improving responsiveness and usability. Applying Redis caching and performance optimization techniques, implementing background workers and asynchronous task processing, and taking part in debugging, testing and peer code reviews in an agile team using Git, Docker and Linux.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <br />
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm">
+            <div className="flex items-start gap-4">
+              <div className="p-3 bg-blue-500/10 rounded-lg">
+                <Terminal className="w-6 h-6 text-blue-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Software Engineer</h3>
+                <p className="text-blue-400 mb-2">Zone01 Kisumu • January 2024 - August 2025</p>
+                <p className="text-gray-300">
+                  Developed and maintained secure REST APIs with Python and FastAPI, and built responsive frontends with React, JavaScript, TypeScript, HTML and CSS. Designed and optimized PostgreSQL and MySQL databases and queries, implemented asynchronous workflows and background tasks, and containerized applications with Docker for deployment on Linux servers with CI/CD pipelines. Integrated AI-powered features into existing products, resolved production issues, and collaborated with product and engineering teams through Git workflows and code reviews.
                 </p>
               </div>
             </div>
@@ -278,7 +297,7 @@ function App() {
                 <h3 className="text-xl font-semibold">Full-Stack Developer</h3>
                 <p className="text-blue-400 mb-2">Vuna • May 2025 - July 2025</p>
                 <p className="text-gray-300">
-                  Developing and customizing ERP systems to meet client-specific needs, with a focus on Odoo and Fleetbase platforms. Configuring modules, workflows, and integrations to optimize business processes and operational efficiency. Collaborating with clients to gather requirements, implement tailored solutions, and provide ongoing technical support, ensuring seamless adoption and functionality.
+                  Developed and customized ERP systems to meet client-specific needs, with a focus on the Odoo and Fleetbase platforms. Configured modules, workflows and integrations to optimize business processes and operational efficiency. Collaborated with clients to gather requirements, implemented tailored solutions and provided technical support to ensure smooth adoption.
                 </p>
               </div>
             </div>

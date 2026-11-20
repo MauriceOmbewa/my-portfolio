@@ -44,6 +44,22 @@ function App() {
       liveDemo: "https://wazi-ten.vercel.app"
     },
     {
+      title: "DawaDash",
+      description: "A medicine ordering and delivery platform featuring an Angular frontend and a Spring Boot backend. Supports medicine management, user authentication, order processing, and delivery operations through secure RESTful APIs and database integration.",
+      image: "https://www.eiosys.com/wp-content/uploads/2022/11/Why-Start-an-Online-Medicine-Delivery-Business.webp",
+      tags: ["Angular", "TypeScript", "Java", "Spring Boot", "Spring Security", "PostgreSQL", "Docker"],
+      link: "https://github.com/MauriceOmbewa/DawaDash",
+      liveDemo: "https://dawa-dash.vercel.app"
+    },
+    {
+      title: "MajiSafi",
+      description: "A water ordering and delivery platform built with Angular and Spring Boot. Features secure Google OAuth2 authentication, water ordering, map-based live order tracking, and RESTful APIs backed by a structured database architecture.",
+      image: "https://mimaji.co.ke/_next/static/media/Water-Delivery-Nairobi.0014a5d1.png",
+      tags: ["Angular", "TypeScript", "Java 21", "Spring Boot", "Spring Security", "OAuth2", "PostgreSQL", "Maven"],
+      link: "https://github.com/MauriceOmbewa/MajiPoa",
+      liveDemo: "https://maji-poa.vercel.app"
+    },
+    {
       title: "Zuru TV",
       description: "ZuruTV is a movie recommendation platform that allows users to discover films tailored to their interests, view detailed information about each title, and stream content directly from the platform.",
       image: "https://www.apptuts.net/wp-content/uploads/2020/09/cover-movie-download-apps.jpg",
@@ -123,6 +139,7 @@ function App() {
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden ring-4 ring-blue-500/30 shadow-2xl">
               <img
                 // src="https://learn.zone01kisumu.ke/git/avatars/495e06ea69c29cee1df656696956ba25?size=870"
+                // src = "https://avatars.githubusercontent.com/u/124437425?v=4"
                 src = "https://avatars.githubusercontent.com/u/124437425?v=4"
                 alt="Maurice Ombewa"
                 className="w-full h-full object-cover"

@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import ProjectCard from './components/ProjectCard';
+import ProjectsShowcase from './components/ProjectsShowcase';
 import SkillBadge from './components/SkillBadge';
 import Section from './components/Section';
 import CVSection from './components/CVSection';
@@ -40,7 +40,7 @@ function App() {
       title: "Garisha",
       description: "Garisha is a business management platform that helps garages, car yards, car hire businesses, and dealerships manage operations, customers, vehicles, finances, and performance analytics in one centralized place.",
       image: "https://hinawierp.com/wp-content/uploads/2026/05/Garage-300x200-2.png.webp",
-      tags: ["React", "TypeScript", "Tailwind CSS"],
+      tags: ["React", "TypeScript", "Go", "Tailwind CSS"],
       link: "https://github.com/MauriceOmbewa/garisha-frontend.git",
       liveDemo: "https://garisha-frontend.vercel.app",
     },
@@ -337,15 +337,26 @@ function App() {
       </Section>
 
       {/* ── Projects ─────────────────────────────────────────────── */}
-      <Section id="projects" icon={<Code2 className="w-5 h-5" />} title="Featured Projects">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger">
-          {projects.map((project) => (
-            <div key={project.title} className="reveal">
-              <ProjectCard {...project} />
+      <section id="projects" className="relative overflow-hidden">
+        {/* Section heading */}
+        <div className="reveal pt-20 pb-4 relative z-10">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col items-center justify-center gap-2">
+              <div className="flex items-center gap-3">
+                <span className="text-blue-400 opacity-80"><Code2 className="w-5 h-5" /></span>
+                <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">Featured Projects</h2>
+              </div>
+              <span className="section-title-line" />
+              <p className="text-gray-600 text-sm mt-3">Scroll — the focused card is fully revealed, others fade back.</p>
             </div>
-          ))}
+          </div>
         </div>
-      </Section>
+
+        {/* Scroll-driven showcase */}
+        <div className="projects-showcase-wrap">
+          <ProjectsShowcase projects={projects} />
+        </div>
+      </section>
 
       {/* ── Education ────────────────────────────────────────────── */}
       <Section id="education" icon={<GraduationCap className="w-5 h-5" />} title="Education">

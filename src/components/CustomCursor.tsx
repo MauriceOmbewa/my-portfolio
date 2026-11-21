@@ -5,51 +5,59 @@ const CustomCursor: React.FC = () => {
   const ringRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Don't run on touch devices
     if (window.matchMedia('(pointer: coarse)').matches) return;
 
     const dot = dotRef.current;
     const ring = ringRef.current;
     if (!dot || !ring) return;
 
-    let mouseX = 0;
-    let mouseY = 0;
-    let ringX = 0;
-    let ringY = 0;
+    // Use refs for positions so the rAF reads the latest values without closures
+    const pos = { mouseX: 0, mouseY: 0, ringX: 0, ringY: 0 };
     let animId: number;
+    let moved = false; // skip rAF work when cursor hasn't moved
 
     const onMouseMove = (e: MouseEvent) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      dot.style.left = `${mouseX}px`;
-      dot.style.top = `${mouseY}px`;
+      pos.mouseX = e.clientX;
+      pos.mouseY = e.clientY;
+      moved = true;
+      // Move the dot immediately on the event — no rAF needed for dot
+      dot.style.transform = `translate(calc(-50% + ${pos.mouseX}px), calc(-50% + ${pos.mouseY}px))`;
     };
 
+    // Ring lags behind with lerp — only needs rAF
     const animate = () => {
-      ringX += (mouseX - ringX) * 0.12;
-      ringY += (mouseY - ringY) * 0.12;
-      ring.style.left = `${ringX}px`;
-      ring.style.top = `${ringY}px`;
       animId = requestAnimationFrame(animate);
+      if (!moved) return; // nothing to do
+
+      const dx = pos.mouseX - pos.ringX;
+      const dy = pos.mouseY - pos.ringY;
+
+      // Skip tiny movements — avoids layout thrashing for sub-pixel changes
+      if (Math.abs(dx) < 0.1 && Math.abs(dy) < 0.1) return;
+
+      pos.ringX += dx * 0.12;
+      pos.ringY += dy * 0.12;
+      ring.style.transform = `translate(calc(-50% + ${pos.ringX}px), calc(-50% + ${pos.ringY}px))`;
     };
 
+    // Throttle mouseover — fires constantly during movement otherwise
+    let hoverThrottle = 0;
     const onMouseOver = (e: MouseEvent) => {
+      const now = Date.now();
+      if (now - hoverThrottle < 80) return;
+      hoverThrottle = now;
+
       const target = e.target as HTMLElement;
-      if (
-        target.closest('a') ||
-        target.closest('button') ||
-        target.closest('[role="button"]')
-      ) {
-        ring.classList.add('hovering');
-        dot.style.transform = 'translate(-50%, -50%) scale(2)';
-      } else {
-        ring.classList.remove('hovering');
-        dot.style.transform = 'translate(-50%, -50%) scale(1)';
-      }
+      const isHoverable = !!(target.closest('a') || target.closest('button') || target.closest('[role="button"]'));
+      ring.classList.toggle('hovering', isHoverable);
     };
 
-    window.addEventListener('mousemove', onMouseMove);
-    window.addEventListener('mouseover', onMouseOver);
+    // Start both at the same offscreen position to avoid a "fly in" on first move
+    dot.style.transform = 'translate(calc(-50% + -100px), calc(-50% + -100px))';
+    ring.style.transform = 'translate(calc(-50% + -100px), calc(-50% + -100px))';
+
+    window.addEventListener('mousemove', onMouseMove, { passive: true });
+    window.addEventListener('mouseover', onMouseOver, { passive: true });
     animId = requestAnimationFrame(animate);
 
     return () => {
@@ -61,8 +69,9 @@ const CustomCursor: React.FC = () => {
 
   return (
     <>
-      <div ref={dotRef} className="cursor-dot" />
-      <div ref={ringRef} className="cursor-ring" />
+      {/* Use transform instead of left/top — avoids layout, uses compositor */}
+      <div ref={dotRef} className="cursor-dot" style={{ left: 0, top: 0 }} />
+      <div ref={ringRef} className="cursor-ring" style={{ left: 0, top: 0 }} />
     </>
   );
 };

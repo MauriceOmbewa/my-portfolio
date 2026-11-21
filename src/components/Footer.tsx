@@ -52,9 +52,6 @@ const Footer: React.FC = () => {
           {/* Copyright */}
           <div className="text-center text-xs text-gray-600 space-y-1">
             <p>© {new Date().getFullYear()} Maurice Ombewa. All rights reserved.</p>
-            <p className="flex items-center justify-center gap-1">
-              Built with <Heart className="w-3 h-3 text-red-500 fill-red-500" /> using React & Tailwind CSS
-            </p>
           </div>
         </div>
       </div>

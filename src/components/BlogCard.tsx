@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Calendar, BookOpen } from 'lucide-react';
+import { ExternalLink, Calendar, BookOpen, ArrowRight } from 'lucide-react';
 
 interface BlogCardProps {
   title: string;
@@ -18,62 +18,67 @@ const BlogCard: React.FC<BlogCardProps> = ({
   publishedDate,
   readTime,
   tags,
-  image
+  image,
 }) => {
   return (
-    <div className="bg-gray-800/50 rounded-xl overflow-hidden border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300 group">
-      {/* Blog Image */}
-      <div className="relative h-48 overflow-hidden">
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group flex flex-col bg-gray-800/60 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700/50 hover:border-blue-500/40 transition-all duration-300 card-hover gradient-border"
+    >
+      {/* Image */}
+      <div className="relative h-44 overflow-hidden">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/30 to-transparent" />
       </div>
 
-      {/* Blog Content */}
-      <div className="p-6">
-        <div className="flex items-start justify-between mb-4">
-        <div className="flex items-center gap-2 text-sm text-gray-400">
-          <Calendar className="w-4 h-4" />
-          <span>{publishedDate}</span>
-          <span>•</span>
-          <BookOpen className="w-4 h-4" />
-          <span>{readTime}</span>
+      {/* Content */}
+      <div className="p-6 flex flex-col flex-1">
+        {/* Meta */}
+        <div className="flex items-center gap-3 text-xs text-gray-500 mb-3">
+          <span className="flex items-center gap-1">
+            <Calendar className="w-3.5 h-3.5" />
+            {publishedDate}
+          </span>
+          <span className="text-gray-600">•</span>
+          <span className="flex items-center gap-1">
+            <BookOpen className="w-3.5 h-3.5" />
+            {readTime}
+          </span>
+        </div>
+
+        <h3 className="text-base font-semibold text-white mb-2 group-hover:text-blue-300 transition-colors leading-snug">
+          {title}
+        </h3>
+
+        <p className="text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3 flex-1">
+          {description}
+        </p>
+
+        {/* Tags */}
+        <div className="flex flex-wrap gap-1.5 mb-4">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="px-2 py-0.5 bg-blue-500/10 text-blue-400 rounded-full text-xs font-medium border border-blue-500/20"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        {/* Read more */}
+        <div className="flex items-center gap-1 text-blue-400 text-sm font-medium group-hover:gap-2 transition-all">
+          Read Article
+          <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
         </div>
       </div>
-      
-      <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
-        {title}
-      </h3>
-      
-      <p className="text-gray-300 mb-4 leading-relaxed">
-        {description}
-      </p>
-      
-      <div className="flex flex-wrap gap-2 mb-4">
-        {tags.map((tag) => (
-          <span
-            key={tag}
-            className="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-      
-        <a
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors font-medium"
-        >
-          Read Article
-          <ExternalLink className="w-4 h-4 ml-2" />
-        </a>
-      </div>
-    </div>
+    </a>
   );
 };
 

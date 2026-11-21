@@ -157,7 +157,7 @@ const ShowcaseCard = memo(({ project, index, total, activeIndex }: CardProps) =>
             fontWeight: 900, lineHeight: 1.2, marginBottom: '12px',
             fontSize: isActive ? 'clamp(1.5rem, 2.5vw, 2rem)' : 'clamp(1.1rem, 2vw, 1.5rem)',
             background: isActive
-              ? `linear-gradient(135deg, #ffffff dd, ${accent.from})`
+              ? `linear-gradient(135deg, #ffffff, ${accent.from})`
               : 'linear-gradient(135deg, #64748b, #475569)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
